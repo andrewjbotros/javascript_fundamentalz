@@ -28,6 +28,17 @@ tellFortune(2, "Tony", "Montreal", "Politician");
 // Call the function three times with different sets of values.
 // Bonus: Figure out how to get the current year in JavaScript instead of passing it in.
 
+function calculateAge(birthYear, currentYear) {
+  	var age1 = year - birthYear;
+	var age2 = year - birthYear - 1;
+	document.write("You are either " + age2 + " or age " + age1);
+}
+
+var currentTime = new Date();
+var year = currentTime.getFullYear();
+var birthYear = window.prompt("Enter your birth year","eg 1990");
+calculateAge(birthYear, year);
+
 // EXERCISE: The Lifetime Supply Calculator
 
 // Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more!

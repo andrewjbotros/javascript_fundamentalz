@@ -11,7 +11,6 @@ var children = 2;
 var partnerName = "Sarah";
 var geoLocation = "Ottawa";
 var jobTitle = "Dentist";
-
 document.write("You will be a " + jobTitle + "in " + geoLocation + ", and married to " + partnerName "with " + children + " kids");
 
 // EXERCISE: The Age Calculator
