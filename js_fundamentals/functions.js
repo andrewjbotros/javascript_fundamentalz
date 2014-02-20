@@ -100,3 +100,17 @@ calcArea(radius);
 // Now store a fahrenheit temperature into a variable.
 // Convert it to celsius and output "NN°F is NN°C."
 
+function celsiusToFahrenheit(celsiusTemperature) {
+	var convert = celsiusTemperature*9/5 + 32;
+	document.write(celsiusTemperature + "°C is " + Math.round(convert*100)/100 + "°F<br />");
+}
+
+function fahrenheitToCelsius(fahrenheitTemperature) {
+	var convert = (fahrenheitTemperature - 32)*5/9;
+	document.write(fahrenheitTemperature + "°F is " + Math.round(convert*100)/100 + "°C<br />");
+}
+
+var celsius = 25;
+celsiusToFahrenheit(celsius);
+var fahrenheit = 85;
+fahrenheitToCelsius(fahrenheit)
