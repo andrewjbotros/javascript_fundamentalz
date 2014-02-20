@@ -28,4 +28,22 @@ for (var i = 1; i <= 10; i++) {
 
 // Check the results of assignGrade function from the conditionals exercise for every value from 60 to 100 - so your log should show "For 89, you got a B. For 90, you got an A.", etc.
 
+function assignGrade(score){
+	if (score < 50){
+		return "F";
+	}else if (score < 60){
+		return "D";
+	}else if (score < 70){
+		return "C";
+	}else if (score < 80){
+		return "B";
+	}else if (score <= 100){
+		return "A";
+	}else{
+		return "Whaaaat? Not a grade!"
+	}
+}
 
+for (var i = 60; i <= 100; i++) {
+	document.write("For " + i + " you get a " + assignGrade(i) + "<br />")
+}
