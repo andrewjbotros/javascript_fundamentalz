@@ -23,6 +23,14 @@ document.write("You will be a " + jobTitle + "in " + geoLocation + ", and marrie
 // Calculate their 2 possible ages based on the stored values.
 // Output them to the screen like so: "They are either NN or NN", substituting the values.
 
+var currentTime = new Date();
+var birthYear = window.prompt("Enter your birth year","eg 1990");
+var year = currentTime.getFullYear();
+var age1 = year - birthYear;
+var age2 = year - birthYear - 1;
+
+document.write("You are either " + age2 + " or age " + age1);
+
 // EXERCISE: The Lifetime Supply Calculator
 
 // Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more!
