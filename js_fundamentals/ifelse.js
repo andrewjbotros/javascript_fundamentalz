@@ -54,6 +54,26 @@ document.write(helloWorld("de") + "<br />");
 // returns a grade for the score, either "A", "B", "C", "D", or "F".
 // Call that function for a few different scores and log the result to make sure it works.
 
+function assignGrade(score){
+	if (score < 50){
+		return "F";
+	}else if (score < 60){
+		return "D";
+	}else if (score < 70){
+		return "C";
+	}else if (score < 80){
+		return "B";
+	}else if (score < 100){
+		return "A";
+	}else{
+		return "Whaaaat? Not a grade!"
+	}
+}
+
+document.write("You scored an " + assignGrade(10) + "<br />");
+document.write("You scored an " + assignGrade(70) + "<br />");
+document.write("You scored an " + assignGrade(60) + "<br />");
+document.write("You scored an " + assignGrade(80) + "<br />");
 // EXERCISE: The Pluralizer
 
 // Write a function named pluralize that:
