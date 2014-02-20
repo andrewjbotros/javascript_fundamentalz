@@ -13,6 +13,25 @@
 // cumin
 // cocoa
 
+var favouriteRecipe = {
+	title: "Alfredo",
+	servings: 6,
+	ingredients: ['garlic', 'olive oil', 'cream', 'butter', 'cheese', 'pepper', 'wine']
+}
+
+function printIngredients (recipe) {
+	for (i=0; i < recipe['ingredients'].length; i++){
+		document.write(recipe['ingredients'][i] + "<br />");
+	}
+}
+
+function printRecipe (recipe) {
+	document.write(recipe['title'] + "<br />Serves: " + recipe['servings'] + "<br />");
+	printIngredients(recipe);
+}
+
+printRecipe(favouriteRecipe);
+
 // EXERCISE: The Reading List
 
 // Keep track of which books you read and which books you want to read!
