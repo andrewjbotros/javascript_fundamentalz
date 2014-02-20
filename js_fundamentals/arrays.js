@@ -12,14 +12,14 @@ for (var i = 0; i < favouriteColors.length; i++) {
 }
 
 for (var i = 0; i < favouriteColors.length; i++) {
-	if ((i+1)==1){
-  		document.write("My " + (i+1) + "st choice is " + favouriteColors[i] + "<br />");
-  	}else if ((i+1)==2){
-  		document.write("My " + (i+1) + "nd choice is " + favouriteColors[i] + "<br />");
-  	}else if ((i+1)==3){
-  		document.write("My " + (i+1) + "rd choice is " + favouriteColors[i] + "<br />");
-  	}else if ((i+1)%100 == 11){
+	if ((i+1)%100==11){
   		document.write("My " + (i+1) + "th choice is " + favouriteColors[i] + "<br />");
+  	}else if ((i+1)%10==2){
+  		document.write("My " + (i+1) + "nd choice is " + favouriteColors[i] + "<br />");
+  	}else if ((i+1)%10==3){
+  		document.write("My " + (i+1) + "rd choice is " + favouriteColors[i] + "<br />");
+  	}else if ((i+1)%10 == 1){
+  		document.write("My " + (i+1) + "st choice is " + favouriteColors[i] + "<br />");
   	}else{
   		document.write("My " + (i+1) + "th choice is " + favouriteColors[i] + "<br />");
   	}
