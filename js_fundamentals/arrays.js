@@ -11,16 +11,27 @@ for (var i = 0; i < favouriteColors.length; i++) {
   document.write("My #" + (i+1) + " choice is " + favouriteColors[i] + "<br />");
 }
 
-for (var i = 0; i < favouriteColors.length; i++) {
-	if ((i+1)%100==11){
-  		document.write("My " + (i+1) + "th choice is " + favouriteColors[i] + "<br />");
-  	}else if ((i+1)%10==2){
-  		document.write("My " + (i+1) + "nd choice is " + favouriteColors[i] + "<br />");
-  	}else if ((i+1)%10==3){
-  		document.write("My " + (i+1) + "rd choice is " + favouriteColors[i] + "<br />");
-  	}else if ((i+1)%10 == 1){
-  		document.write("My " + (i+1) + "st choice is " + favouriteColors[i] + "<br />");
-  	}else{
-  		document.write("My " + (i+1) + "th choice is " + favouriteColors[i] + "<br />");
-  	}
+function list(someList){
+  for (var i = 0; i < someList.length; i++) {
+  	if ((i+1)%100==11 || (i+1)%100==12){
+    		document.write("My " + (i+1) + "th choice is " + favouriteColors[i] + "<br />");
+    	}else if ((i+1)%10==2){
+    		document.write("My " + (i+1) + "nd choice is " + favouriteColors[i] + "<br />");
+    	}else if ((i+1)%10==3){
+    		document.write("My " + (i+1) + "rd choice is " + favouriteColors[i] + "<br />");
+    	}else if ((i+1)%10 == 1){
+    		document.write("My " + (i+1) + "st choice is " + favouriteColors[i] + "<br />");
+    	}else{
+    		document.write("My " + (i+1) + "th choice is " + favouriteColors[i] + "<br />");
+    	}
+  }
 }
+
+list(favouriteColors);
+
+var test = [];
+for (var i = 1; i <= 200; i++) {
+   test.push(i);
+}
+
+list(test);
