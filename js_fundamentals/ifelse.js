@@ -82,6 +82,20 @@ document.write("You scored an " + assignGrade(80) + "<br />");
 // Call that function for a few different scores and log the result to make sure it works.
 // Bonus: Make it handle a few collective nouns like "sheep" and "geese".
 
+function pluralize(noun, number){
+	if (number == 1){
+		return number + " " + noun + "<br />";
+	}else if (noun == "sheep" || noun == "geese"){
+		return number + " " + noun + "<br />";
+	}else{
+		return number + " " + noun + "s<br />";
+	}
+}
 
+document.write(pluralize("sheep", 2));
+document.write(pluralize("cat", 5));
+document.write(pluralize("dog", 1));
+document.write(pluralize("deer", 2));
+document.write(pluralize("sheep", 1));
 
 
