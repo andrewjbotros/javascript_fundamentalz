@@ -82,5 +82,24 @@ listRefined(books)
 // Create an object to store the following information about your favorite movie: title (a string), duration (a number), and stars (an array of strings).
 // Create a function to print out the movie information like so: "Puff the Magic Dragon lasts for 30 minutes. Stars: Puff, Jackie, Living Sneezes."
 
+var movie = {
+	title: "A Living Hell",
+	duration: "1 hour 20 minutes",
+	stars: ["Guy 1", "Guy 2", "Girl 1", "Girl 2"]
+}
 
+function listStars(stars){
+	for (i=0; i < stars.length - 1; i++){
+		document.write(stars[i] + ", ");
+	}
+	document.write(stars[stars.length-1] + ".")
+}
+
+
+function movieDetails(movie){
+	document.write(movie['title'] + " lasts for " + movie['duration'] + ". Stars: ");
+	listStars(movie['stars']);
+}
+
+movieDetails(movie);
 
