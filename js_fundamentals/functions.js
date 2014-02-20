@@ -73,6 +73,20 @@ calculateSupply(50, 9.134);
 // Pass the radius to the function.
 // Calculate the area based on the radius, and output "The area is NN".
 
+function calcCircumfrence(radius) {
+	var circumference = 2*radius*Math.PI;
+	document.write("The circumference is " + Math.round(circumference*100)/100 +"<br />");
+}
+
+function calcArea(radius) {
+	var area = Math.PI*(radius*radius);
+	document.write("The area is " + Math.round(area*100)/100 + "<br />");
+}
+
+var radius = window.prompt("Enter the radius of a circle:", "eg 5");
+calcCircumfrence(radius);
+calcArea(radius);
+
 // EXERCISE: The Temperature Converter
 
 // It's hot out! Let's make a converter based on the steps here.
