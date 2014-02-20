@@ -41,6 +41,11 @@ document.write("You are either " + age2 + " or age " + age1);
 // Calculate how many you would eat total for the rest of your life.
 // Output the result to the screen like so: "You will need NN to last you until the ripe old age of X".
 
+var age = window.prompt("Enter your age:","eg 25");
+var maxAge = window.prompt("Enter the age at which you need to be supplied:","eg 90");
+var perDay = window.prompt("Enter how many you need a day:","eg 2");
+var requiredSupply = (maxAge - age)*(365)*perDay;
+document.write("You will need " + requiredSupply + " units to have enough to age " + maxAge);
 // EXERCISE: The Geometrizer
 
 // Calculate properties of a circle, using the definitions here.
