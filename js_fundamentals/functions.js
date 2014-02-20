@@ -9,6 +9,14 @@
 // outputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
 // Call that function 3 times with 3 different values for the arguments.
 
+function tellFortune(numberOfChildren, partnerName, geoLocation, jobTitle) {
+  document.write("You will be a " + jobTitle + " in " + geoLocation + ", and married to " + partnerName + " with " + numberOfChildren + " kids <br />");
+}
+
+tellFortune(2, "Sarah", "Ottawa", "Dancer");
+tellFortune(2, "Doug", "Calgary", "Plumber");
+tellFortune(2, "Tony", "Montreal", "Politician");
+
 // EXERCISE: The Age Calculator
 
 // Forgot how old you are? Calculate it!
