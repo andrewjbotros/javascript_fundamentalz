@@ -50,6 +50,16 @@ calculateAge(birthYear, year);
 // Call that function three times, passing in different values each time.
 // Bonus: Accept floating point values for amount per day, and round the result to a round number.
 
+function calculateSupply(age, amountPerDay) {
+	var maxAge = 85;
+  	var requiredSupply = (maxAge - age)*(365)*amountPerDay;
+	document.write("You will need " + Math.round(requiredSupply) + " to last you until the ripe old age of " + maxAge + ".<br />");
+}
+
+calculateSupply(28, 4);
+calculateSupply(50, 4.2341);
+calculateSupply(50, 9.134);
+
 // EXERCISE: The Geometrizer
 
 // Create 2 functions that calculate properties of a circle, using the definitions here.

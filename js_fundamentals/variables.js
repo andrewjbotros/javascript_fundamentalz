@@ -11,7 +11,7 @@ var children = 2;
 var partnerName = "Sarah";
 var geoLocation = "Ottawa";
 var jobTitle = "Dentist";
-document.write("You will be a " + jobTitle + "in " + geoLocation + ", and married to " + partnerName "with " + children + " kids");
+document.write("You will be a " + jobTitle + "in " + geoLocation + ", and married to " + partnerName "with " + children + " kids.");
 
 // EXERCISE: The Age Calculator
 
@@ -27,7 +27,7 @@ var birthYear = window.prompt("Enter your birth year","eg 1990");
 var year = currentTime.getFullYear();
 var age1 = year - birthYear;
 var age2 = year - birthYear - 1;
-document.write("You are either " + age2 + " or age " + age1);
+document.write("You are either " + age2 + " or age " + age1 + ".");
 
 // EXERCISE: The Lifetime Supply Calculator
 
@@ -43,7 +43,7 @@ var age = window.prompt("Enter your age:","eg 25");
 var maxAge = window.prompt("Enter the age at which you need to be supplied:","eg 90");
 var perDay = window.prompt("Enter how many you need a day:","eg 2");
 var requiredSupply = (maxAge - age)*(365)*perDay;
-document.write("You will need " + requiredSupply + " units to have enough to age " + maxAge);
+document.write("You will need " + requiredSupply + " units to have enough to age " + maxAge + ".");
 // EXERCISE: The Geometrizer
 
 // Calculate properties of a circle, using the definitions here.
