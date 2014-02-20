@@ -7,6 +7,13 @@
 // Store the following into variables: number of children, partner's name, geographic location, job title.
 // Output your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
 
+var children = 2;
+var partnerName = "Sarah";
+var geoLocation = "Ottawa";
+var jobTitle = "Dentist";
+
+document.write("You will be a " + jobTitle + "in " + geoLocation + ", and married to " + partnerName "with " + children + " kids");
+
 // EXERCISE: The Age Calculator
 
 // Forgot how old someone is? Calculate it!
