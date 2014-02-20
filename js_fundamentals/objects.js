@@ -26,7 +26,7 @@ function printIngredients (recipe) {
 }
 
 function printRecipe (recipe) {
-	document.write(recipe['title'] + "<br />Serves: " + recipe['servings'] + "<br />");
+	document.write(recipe['title'] + "<br />Serves: " + recipe['servings'] + "<br />Ingredients: <br />");
 	printIngredients(recipe);
 }
 
@@ -39,6 +39,41 @@ printRecipe(favouriteRecipe);
 // Create an array of objects, where each object describes a book and has properties for the title (a string), author (a string), and alreadyRead (a boolean indicating if you read it yet).
 // Iterate through the array of books. For each book, log the book title and book author like so: "The Hobbit by J.R.R. Tolkien".
 // Now use an if/else statement to change the output depending on whether you read it yet or not. If you read it, log a string like 'You already read "The Hobbit" by J.R.R. Tolkien', and if not, log a string like 'You still need to read "The Lord of the Rings" by J.R.R. Tolkien.'
+
+var book1 = {
+	title: "Born to Run",
+	author: "Eric Deville",
+	alreadyRead: false
+
+}
+
+var book2 = {
+	title: "Free Spirit",
+	author: "Naomi Boom",
+	alreadyRead: true
+}
+
+books = [book1, book2]
+
+function list(books){
+	for (i=0; i < books.length; i++){
+		document.write(books[i]['title'] + " by " + books[i]['author'] + "<br />");
+	}
+}
+
+list(books)
+
+function listRefined(books){
+	for (i=0; i < books.length; i++){
+		if (books[i]['alreadyRead'] == true){
+			document.write("You already read " + books[i]['title'] + " by " + books[i]['author'] + "<br />");
+		}else{
+			document.write("You still need to read " + books[i]['title'] + " by " + books[i]['author'] + "<br />");
+		}
+	}
+}
+
+listRefined(books)
 
 // EXERCISE: The Movie Database
 
