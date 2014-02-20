@@ -68,4 +68,11 @@ document.write("The area is " + Math.round(area*100)/100);
 // Now store a fahrenheit temperature into a variable.
 // Convert it to celsius and output "NN°F is NN°C."
 
+var celsius = window.prompt("Enter the temperature in celsius:", "eg 20");
+var celsiusConvert = celsius*9/5 + 32;
+document.write("The temperature in fahrenheit is " + Math.round(celsiusConvert*100)/100 + "<br />");
+var fahrenheit = window.prompt("Enter the temperature in fahrenheit:", "eg 75");
+var fahrenheitConvert = (fahrenheit - 32)*5/9;
+document.write("The temperature in celsius is " + Math.round(fahrenheitConvert*100)/100);
+
 
