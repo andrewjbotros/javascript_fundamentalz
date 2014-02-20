@@ -28,7 +28,6 @@ var birthYear = window.prompt("Enter your birth year","eg 1990");
 var year = currentTime.getFullYear();
 var age1 = year - birthYear;
 var age2 = year - birthYear - 1;
-
 document.write("You are either " + age2 + " or age " + age1);
 
 // EXERCISE: The Lifetime Supply Calculator
@@ -53,6 +52,12 @@ document.write("You will need " + requiredSupply + " units to have enough to age
 // Store a radius into a variable.
 // Calculate the circumference based on the radius, and output "The circumference is NN".
 // Calculate the area based on the radius, and output "The area is NN".
+
+var radius = window.prompt("Enter the radius of a circle:", "eg 5");
+var circumference = 2*radius*Math.PI;
+var area = Math.PI*(radius^2);
+document.write("The circumference is " + Math.round(circumference*100)/100 +"<br />");
+document.write("The area is " + Math.round(area*100)/100);
 
 // EXERCISE: The Temperature Converter
 
